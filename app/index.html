@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>updated mobile web features</title>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+  </head>
+  <body>
+    <!--[if IE]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
+
+
+    <!-- SKIP-TO-MAIN CONTENT LINK ————————————————————————————————————————— -->
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <!-- MOBILE NAVIGATION MENU ICON ——————————————————————————————————————— -->
+    <div id="mobile-navigation-menu-icon">
+      <input id="page-nav-toggle" class="main-navigation-toggle" type="checkbox" />
+      <label for="page-nav-toggle">
+        <svg class="icon--menu-toggle" viewBox="0 0 60 30">
+          <g class="icon-group">
+            <g class="icon--menu">
+              <path d="M 6 0 L 54 0" />
+              <path d="M 6 15 L 54 15" />
+              <path d="M 6 30 L 54 30" />
+            </g>
+            <g class="icon--close">
+              <path d="M 15 0 L 45 30" />
+              <path d="M 15 30 L 45 0" />
+            </g>
+          </g>
+        </svg>
+      </label>
+    </div>
+
+
+    <!-- NAVIGATION BAR ———————————————————————————————————————————————————— -->
+    <nav role="navigation">
+      <ul id="navigation-list">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="typography.html">Typography</a></li>
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+      </ul>
+    </nav>
+
+
+    <!-- PAGE HEADER ————————————————————————————————————————————————————————-->
+    <header role="banner">
+      <hgroup>
+        <h1>Site Title</h1>
+        <h2>Page Title</h2>
+      </hgroup>
+    </header>
+
+
+    <!-- MAIN PAGE CONTENT ————————————————————————————————————————————————— -->
+    <main id="main">
+      <section>
+        <h3>Section Title</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+           Ad dolor et exercitationem fugit, in inventore nisi officiis
+           perferendis quas repudiandae saepe temporibus voluptates?
+           Accusantium aspernatur dolorum fugiat nobis officiis porro!</p>
+      </section>
+    </main>
+
+
+    <!-- PAGE FOOTER ————————————————————————————————————————————————————————-->
+    <footer role="contentinfo">
+      <p>Copyright &copy; 2021. All Rights Reserved</p>
+    </footer>
+
+
+    <!-- ==== JAVASCRIPT =================================================== -->
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- endbuild -->
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/utils.js"></script>
+    <script src="scripts/touch-events.js"></script>
+    <script src="scripts/navigation-bar.js"></script>
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>

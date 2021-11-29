@@ -1,0 +1,23 @@
+
+
+
+
+
+
+$font-family : "Inter UI", "Inter UI", "Inter", "Inter", Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$base-lineheight: 1.5;
+$fontsize-base: 18px;
+
+$navbar-bg: #333333;
+$primary: #701fff;
+
+:root {
+  --color-primary   : #002626;
+  --color-secondary : #F0F7EE;
+  --duration        : 1s;
+  --nav-duration    : calc(var(--duration) / 4);
+  --ease            : cubic-bezier(0.215, 0.61, 0.355, 1);
+  --space           : 1rem;
+  --line-height     : 1.5;
+  --font-size       : 1.125rem;
+}

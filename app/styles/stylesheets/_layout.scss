@@ -1,0 +1,59 @@
+
+
+%container {
+  width     : 90%;
+  //noinspection CssOverwrittenProperties
+  max-width : 768px;
+  //noinspection CssOverwrittenProperties
+  max-width : 65ch;
+  margin    : 0 auto;
+}
+
+/* Extend %container styles to relevant layout selectors */
+.container,body>header:first-of-type>hgroup,main>* { @extend %container; }
+
+$page-header: ("body>header:first-of-type");
+$page-footer : ("body>footer:last-of-type");
+#{$page-header},#{$page-footer} {
+  margin : 0;
+  background-color : ghostwhite;
+  padding : 2em 0;
+  width : 100vw;
+  transition : all 120ms;
+  * {
+    transition : all 120ms;
+  }
+}
+#{$page-header} {
+  h1, h2, h3, h4, h5, h6 {
+    line-height : 1 !important;
+    margin : 0 auto 1rem !important;
+  }
+}
+#{$page-footer} {
+  text-align : center;
+  p {
+    line-height : 1 !important;
+    font-size : small;
+    padding : 0;
+    margin : 0 auto !important;
+    color: gray;
+    font-weight : 500;
+  }
+}
+
+body {
+  transition : all 120ms;
+  display : flex;
+  flex-direction : column;
+  justify-content : space-between;
+  height : 100%;
+  min-height : 100vh;
+
+}
+main {
+  transition : all 120ms;
+  padding : 1rem 0;
+  margin : 0;
+  flex-grow : 1;
+}
